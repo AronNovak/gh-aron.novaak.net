@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://aron.novaak.net/">
+  <channel>
+    <title>Novák Áron</title>
+    <link>http://aron.novaak.net/</link>
+    <description/>
+    <language>hu</language>
+    
+    <item>
+  <title>Mai munkahely</title>
+  <link>http://aron.novaak.net/node/454</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Mai munkahely&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2020. 03. 19., cs - 10:34&lt;/span&gt;
+</description>
+  <pubDate>Thu, 19 Mar 2020 08:34:33 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">454 at http://aron.novaak.net</guid>
+    <comments>http://aron.novaak.net/node/454#comments</comments>
+    </item>
+<item>
+  <title>Lapozz bele - Mi atyánk - Ferenc pápa</title>
+  <link>http://aron.novaak.net/node/453</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Lapozz bele - Mi atyánk - Ferenc pápa&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2019. 12. 06., p - 14:26&lt;/span&gt;
+</description>
+  <pubDate>Fri, 06 Dec 2019 12:26:28 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">453 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>Hallókészülék-illeszték javítása</title>
+  <link>http://aron.novaak.net/node/452</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Hallókészülék-illeszték javítása&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2019. 12. 05., cs - 08:45&lt;/span&gt;
+</description>
+  <pubDate>Thu, 05 Dec 2019 06:45:38 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">452 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>A motorháztető alatt</title>
+  <link>http://aron.novaak.net/node/451</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;A motorháztető alatt&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2019. 08. 25., v - 06:42&lt;/span&gt;
+</description>
+  <pubDate>Sun, 25 Aug 2019 03:42:51 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">451 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>Büszkeség</title>
+  <link>http://aron.novaak.net/node/450</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Büszkeség&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2019. 06. 14., p - 16:00&lt;/span&gt;
+</description>
+  <pubDate>Fri, 14 Jun 2019 13:00:21 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">450 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>System upgrade comparison benchmark</title>
+  <link>http://aron.novaak.net/i9-i9900k-vs-i7-2600-web-dev-benchmarking</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;System upgrade comparison benchmark&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2019. 02. 12., k - 10:00&lt;/span&gt;
+</description>
+  <pubDate>Tue, 12 Feb 2019 08:00:59 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">449 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>Github Status Stats</title>
+  <link>http://aron.novaak.net/node/448</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Github Status Stats&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2018. 08. 24., p - 07:38&lt;/span&gt;
+</description>
+  <pubDate>Fri, 24 Aug 2018 04:38:07 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">448 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>Eladó a lakásunk</title>
+  <link>http://aron.novaak.net/node/447</link>
+  <description>&lt;span property="schema:name" class="field field--name-title field--type-string field--label-hidden"&gt;Eladó a lakásunk&lt;/span&gt;
+&lt;span rel="schema:author" class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span property="schema:dateCreated" content="2018-07-22T12:51:43+00:00" class="field field--name-created field--type-created field--label-hidden"&gt;2018. 07. 22., v - 15:51&lt;/span&gt;
+</description>
+  <pubDate>Sun, 22 Jul 2018 12:51:43 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">447 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>Asus routerek - VPNFilter(?)</title>
+  <link>http://aron.novaak.net/node/446</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Asus routerek - VPNFilter(?)&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2018. 06. 09., szo - 11:10&lt;/span&gt;
+</description>
+  <pubDate>Sat, 09 Jun 2018 08:10:31 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">446 at http://aron.novaak.net</guid>
+    </item>
+<item>
+  <title>Első podcast-részvételem</title>
+  <link>http://aron.novaak.net/node/445</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Első podcast-részvételem&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span lang="" about="http://aron.novaak.net/user/1" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;Novák Áron&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;2018. 06. 08., p - 15:39&lt;/span&gt;
+</description>
+  <pubDate>Fri, 08 Jun 2018 12:39:46 +0000</pubDate>
+    <dc:creator>Novák Áron</dc:creator>
+    <guid isPermaLink="false">445 at http://aron.novaak.net</guid>
+    </item>
+
+  </channel>
+</rss>

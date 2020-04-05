@@ -1,0 +1,62 @@
+/**
+ * @file
+ * Default style for file module.
+ */
+
+/* File icons. */
+
+.file {
+  display: inline-block;
+  min-height: 16px;
+  padding-left: 20px; /* LTR */
+  background-repeat: no-repeat;
+  background-position: left center; /* LTR */
+}
+[dir="rtl"] .file {
+  padding-right: 20px;
+  padding-left: inherit;
+  background-position: right center;
+}
+.file--general,
+.file--application-octet-stream {
+  background-image: url(../../../images/icons/application-octet-stream/index.png);
+}
+.file--package-x-generic {
+  background-image: url(../../../images/icons/package-x-generic/index.png);
+}
+.file--x-office-spreadsheet {
+  background-image: url(../../../images/icons/x-office-spreadsheet/index.png);
+}
+.file--x-office-document {
+  background-image: url(../../../images/icons/x-office-document/index.png);
+}
+.file--x-office-presentation {
+  background-image: url(../../../images/icons/x-office-presentation/index.png);
+}
+.file--text-x-script {
+  background-image: url(../../../images/icons/text-x-script/index.png);
+}
+.file--text-html {
+  background-image: url(../../../images/icons/text-html/index.png);
+}
+.file--text-plain {
+  background-image: url(../../../images/icons/text-plain/index.png);
+}
+.file--application-pdf {
+  background-image: url(../../../images/icons/application-pdf/index.png);
+}
+.file--application-x-executable {
+  background-image: url(../../../images/icons/application-x-executable/index.png);
+}
+.file--audio {
+  background-image: url(../../../images/icons/audio-x-generic/index.png);
+}
+.file--video {
+  background-image: url(../../../images/icons/video-x-generic/index.png);
+}
+.file--text {
+  background-image: url(../../../images/icons/text-x-generic/index.png);
+}
+.file--image {
+  background-image: url(../../../images/icons/image-x-generic/index.png);
+}
