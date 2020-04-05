@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="../../node/270/index.html" />
+<link rel="shortlink" href="../../node/270/index.html" />
+<link rel="revision" href="../../node/270/index.html" />
+
+    <title>A FeedAPI 1.4 megjelent | Novák Áron</title>
+    <link rel="stylesheet" media="all" href="../../core/assets/vendor/normalize-css/normalize/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/misc/normalize-fixes/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/ajax-progress.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/align.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/autocomplete-loading.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/fieldgroup.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/container-inline.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/clearfix.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/details.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/hidden.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/item-list.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/js.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/nowrap.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/position-container.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/progress.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/reset-appearance.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/resize.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/sticky-header.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/system-status-counter/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/system-status-report-counters/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/system-status-report-general-info/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/tabledrag.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/tablesort.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/stable/css/system/components/tree-child.module/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/base/elements/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/layout/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/action-links/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/breadcrumb/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/button/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/collapse-processed/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/container-inline/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/details/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/exposed-filters/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/field/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/form/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/icons/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/inline-form/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/item-list/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/link/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/links/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/menu/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/more-link/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/pager/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/tabledrag/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/tableselect/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/tablesort/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/tabs/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/textarea/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/ui-dialog/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/messages/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/classy/css/components/node/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/block/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/book/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/breadcrumb/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/captions/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/comments/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/contextual/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/demo-block/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/dropbutton.component/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/featured-top/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/feed-icon/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/field/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/form/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/forum/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/header/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/help/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/highlighted/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/item-list/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/list-group/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/list/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/main-content/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/menu/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/messages/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/node/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/node-preview/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/page-title/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/pager/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/panel/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/primary-menu/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/search-form/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/search-results/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/secondary-menu/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/shortcut/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/skip-link/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/sidebar/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/site-branding/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/site-footer/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/table/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/tablesort-indicator/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/tabs/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/text-formatted/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/toolbar/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/featured-bottom/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/password-suggestions/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/ui.widget/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/vertical-tabs.component/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/views/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/buttons/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/image-button/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../core/themes/bartik/css/components/ui-dialog/index.css?q21qh7" />
+<link rel="stylesheet" media="all" href="../../sites/default/files/color/bartik-54f4b31b/colors/index.css?q21qh7" />
+<link rel="stylesheet" media="print" href="../../core/themes/bartik/css/print/index.css?q21qh7" />
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+
+  </head>
+  <body class="layout-one-sidebar layout-sidebar-first path-node page-node-type-story">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Ugrás a tartalomra
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page-wrapper">
+  <div id="page">
+    <header id="header" class="header" role="banner">
+      <div class="section layout-container clearfix">
+          <div class="region region-secondary-menu">
+    <nav role="navigation" aria-labelledby="block-bartik-account-menu-menu" id="block-bartik-account-menu" class="block block-menu navigation menu--account">
+            
+  <h2 class="visually-hidden" id="block-bartik-account-menu-menu">User Menu</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-bartik-account-menu"></div>
+    <div class="menu-toggle-target" id="hide-block-bartik-account-menu"></div>
+    <a class="menu-toggle" href="#show-block-bartik-account-menu">Mutatás &mdash; User Menu</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-bartik-account-menu">Elrejtés &mdash; User Menu</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="../../user/login/index.html" data-drupal-link-system-path="user/login">Bejelentkezés</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+
+  </div>
+
+          <div class="clearfix region region-header">
+    <div id="block-bartik-branding" class="clearfix site-branding block block-system block-system-branding-block">
+  
+    
+          <div class="site-branding__text">
+              <div class="site-branding__name">
+          <a href="../../index/index.html" title="Címlap" rel="home">Novák Áron</a>
+        </div>
+                </div>
+  </div>
+
+  </div>
+
+          <div class="region region-primary-menu">
+    <nav role="navigation" aria-labelledby="block-bartik-main-menu-menu" id="block-bartik-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-bartik-main-menu-menu">Main menu</h2>
+  
+
+      <div class="content">
+        <div class="menu-toggle-target menu-toggle-target-show" id="show-block-bartik-main-menu"></div>
+    <div class="menu-toggle-target" id="hide-block-bartik-main-menu"></div>
+    <a class="menu-toggle" href="#show-block-bartik-main-menu">Mutatás &mdash; Main menu</a>
+    <a class="menu-toggle menu-toggle--hide" href="#hide-block-bartik-main-menu">Elrejtés &mdash; Main menu</a>
+    
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="../../index/index.html" data-drupal-link-system-path="&lt;front&gt;">Címlap</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</nav>
+
+  </div>
+
+      </div>
+    </header>
+          <div class="highlighted">
+        <aside class="layout-container section clearfix" role="complementary">
+            <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+        </aside>
+      </div>
+            <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
+      <div id="main" class="layout-main clearfix">
+          <div class="region region-breadcrumb">
+    <div id="block-bartik-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+      <div class="content">
+        <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Morzsa</h2>
+    <ol>
+          <li>
+                  <a href="../../index/index.html">Címlap</a>
+              </li>
+        </ol>
+  </nav>
+
+    </div>
+  </div>
+
+  </div>
+
+        <main id="content" class="column main-content" role="main">
+          <section class="section">
+            <a id="main-content" tabindex="-1"></a>
+              <div class="region region-content">
+    <div id="block-bartik-page-title" class="block block-core block-page-title-block">
+  
+    
+      <div class="content">
+      
+  <h1 class="title page-title"><span class="field field--name-title field--type-string field--label-hidden">A FeedAPI 1.4 megjelent</span>
+</h1>
+
+
+    </div>
+  </div>
+<div id="block-bartik-content" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      
+<article data-history-node-id="270" role="article" about="/node/270" class="node node--type-story node--promoted node--view-mode-full clearfix">
+  <header>
+    
+          
+          <div class="node__meta">
+        
+        <span>
+          <span class="field field--name-uid field--type-entity-reference field--label-hidden"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></span>
+ küldte be <span class="field field--name-created field--type-created field--label-hidden">2008. 10. 10., p - 19:14</span>
+ időpontban        </span>
+        
+      </div>
+      </header>
+  <div class="node__content clearfix">
+    
+      <div class="field field--name-taxonomy-vocabulary-6 field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item"><a href="../../taxonomy/term/20/index.html" hreflang="hu">Drupal</a></div>
+              <div class="field__item"><a href="../../taxonomy/term/66/index.html" hreflang="hu">Planet Drupal.hu</a></div>
+              <div class="field__item"><a href="../../taxonomy/term/34/index.html" hreflang="hu">FeedAPI</a></div>
+          </div>
+  
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Megjelent a FeedAPI 1.4-es verziója. Van benne egy rakás hibajavítás és pár újdonság, főleg a Views támogatással kapcsolatban. A kiadási megjegyzéseket itt találjátok, valamint le is tudjátok tölteni azonnal: <a href="http://drupal.org/node/319635">http://drupal.org/node/319635</a><br />
+Megjegyezném még, hogy amióta a <a href="http://www.drupal.hu/">Drupal.hu</a> a <a href="http://drupal.hu/planet">Planet</a> menüponthoz FeedAPI-t használ, azóta fogtak több bugot is, amiből egy javítva is van a kiadásban, ez tényleg nagy segítség!</p>
+</div>
+      <section class="field field--name-comment-node-story field--type-comment field--label-hidden comment-wrapper">
+  
+  <article role="article" data-comment-user-id="0" id="comment-202" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223659167"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 10., p - 20:19</p>
+    <p class="comment__permalink"><a href="../202/index.html#comment-202" hreflang="hu">Permalink</a></p>
+          </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../202/index.html#comment-202" class="permalink" rel="bookmark" hreflang="hu">Views</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item">Kipróbáltam és a Views integráció valóban sokkal komolyabb lett. Legalábbis ami nekem kellett múltkor (<a href="../../index/index-4.html?q=node/229#comment-199">http://aron.novaak.net/?q=node/229#comment-199</a>), az hiányzott az 1.3-ból, de most már benne van.
+
+Köszi kiváló a munkát!</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+<article role="article" data-comment-user-id="0" id="comment-204" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223667520"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 10., p - 22:38</p>
+    <p class="comment__permalink"><a href="../204/index.html#comment-204" hreflang="hu">Permalink</a></p>
+          </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../204/index.html#comment-204" class="permalink" rel="bookmark" hreflang="hu">többi?</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p><cite>azóta fogtak több bugot is, amiből egy javítva is van a kiadásban</cite></p>
+<p>A többit nem sikerült javítani?</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="1" id="comment-205" class="comment js-comment by-node-author clearfix">
+    <span class="hidden" data-comment-timestamp="1223669203"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></p>
+    <p class="comment__time">2008. 10. 10., p - 23:06</p>
+    <p class="comment__permalink"><a href="../205/index.html#comment-205" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../204/index.html#comment-204" class="permalink" rel="bookmark" hreflang="hu">többi?</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../205/index.html#comment-205" class="permalink" rel="bookmark" hreflang="hu">Nem is foglalkoztam azokkal.</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Nem is foglalkoztam azokkal. Volt néhány nagyon súlyos hiba az 1.3-ban, ami miatt sürgős volt az új kiadás.<br />
+Az egyik hiba eleve annyira nem kritikus, van egy-két lefordíthatatlan string a modulban.<br />
+A másik pedig nem igazán hiba szerintem, egy olyan opciót hiányolnak a FeedAPI-ból, ami benne volt régebben, de el lett távolítva (melyik felhasználó legyen az elem node-ok szerzője című téma).</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+</div><article role="article" data-comment-user-id="0" id="comment-206" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223673145"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 11., szo - 00:12</p>
+    <p class="comment__permalink"><a href="../206/index.html#comment-206" hreflang="hu">Permalink</a></p>
+          </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../206/index.html#comment-206" class="permalink" rel="bookmark" hreflang="hu">Pormanscron nem frissíti?</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Üdv, nagyon jó kis modul, az lenne a kérdésem, hogy megoldható valamilyen módon, hogy az időzített feladatokkal együtt frissüljön ez is, vagy csak én vagyok béna? Pedig beállítottam a Cron idő 75-ra és van 13 csatorna. Találtam valami poormanscron bug jelentést is, de nem lettem okosabb ( <a href="http://drupal.org/node/235328">http://drupal.org/node/235328</a> ). Mert most csak akkor frissülnek a hírcsatorna elemek, ha a böngészőből futtatom az admin/reports/status/run-cron -t. </p>
+<p>Egy ötlet: jó lenne, valami olyan beállítás, hogy az eredeti cikkeknek lehessen nofollow-ot adni.</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="0" id="comment-207" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223675722"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 11., szo - 00:55</p>
+    <p class="comment__permalink"><a href="../207/index.html#comment-207" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../206/index.html#comment-206" class="permalink" rel="bookmark" hreflang="hu">Pormanscron nem frissíti?</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../207/index.html#comment-207" class="permalink" rel="bookmark" hreflang="hu">Még valami</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Az 1.4-re frissítés óta ilyen üzeneteket dobál (csak a feed olvasó oldal),<br />
+6.5-ös drupalon, volt update.php futtatás meg hasonlóak. Lehet, hogy az úvonal álnév zavar be? Ha a feed tartalom típusnál kiszedem, hogy Ez egy hírcsatorna tartalomtípus, akkor abbahadja ezt az üzenet küldést.</p>
+<p>warning: Illegal offset type in /var/www/virtual/opera-bongeszo.com/htdocs/includes/path.inc on line 64.<br />
+warning: Illegal offset type in /var/www/virtual/opera-bongeszo.com/htdocs/includes/path.inc on line 69.<br />
+warning: preg_match() expects parameter 2 to be string, array given in /var/www/virtual/opera-bongeszo.com/htdocs/includes/bootstrap.inc on line 732.</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="1" id="comment-208" class="comment js-comment by-node-author clearfix">
+    <span class="hidden" data-comment-timestamp="1223712774"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></p>
+    <p class="comment__time">2008. 10. 11., szo - 11:12</p>
+    <p class="comment__permalink"><a href="../208/index.html#comment-208" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../207/index.html#comment-207" class="permalink" rel="bookmark" hreflang="hu">Még valami</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../208/index.html#comment-208" class="permalink" rel="bookmark" hreflang="hu">hiba</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Ezt élvezem, mielőtt bármire ránéztem volna, itt a válasz valaki mástól az issue queue-ban, aki ugyanezt a hibát észlelte, aztán megoldotta:<br /><a href="http://drupal.org/node/318899#comment-1054037">http://drupal.org/node/318899#comment-1054037</a><br />
+De szerintem csak a legutolsó fontos igazán, a views cache-t kell kiüríteni.</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+</div><article role="article" data-comment-user-id="1" id="comment-209" class="comment js-comment by-node-author clearfix">
+    <span class="hidden" data-comment-timestamp="1223712903"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></p>
+    <p class="comment__time">2008. 10. 11., szo - 11:15</p>
+    <p class="comment__permalink"><a href="../209/index.html#comment-209" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../206/index.html#comment-206" class="permalink" rel="bookmark" hreflang="hu">Pormanscron nem frissíti?</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../209/index.html#comment-209" class="permalink" rel="bookmark" hreflang="hu">A poormanscron és a FeedAPI</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>A poormanscron és a FeedAPI nem kompatibilisek, szerintem a poormanscron hibája.<br />
+Berakok neked egy cron jobot, ami óránként lefut, add meg, hogy milyen címet wgeteljek :)<br />
+A nofollow taget nem lehet a theme layerben hozzáadni?</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="0" id="comment-210" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223751442"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 11., szo - 21:57</p>
+    <p class="comment__permalink"><a href="../210/index.html#comment-210" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span> <a href="../209/index.html#comment-209" class="permalink" rel="bookmark" hreflang="hu">A poormanscron és a FeedAPI</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../210/index.html#comment-210" class="permalink" rel="bookmark" hreflang="hu">Köszönöm a segítséget,</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>közben utána néztem ennek a cím wgetelésnek, előszőr azt hittem, hogy elírtál valamit, de már selytem, hogy a wget valami parancs, ami kell a cron futtatáshoz :)</p>
+<p>A cron címe a <a href="http://www.opera-bongeszo.com/cron.php">http://www.opera-bongeszo.com/cron.php</a> a hosszabb pedig a<br />
+/var/www/virtual/opera-bongeszo.com/htdocs/cron.php</p>
+<p>Jól sejtem, hogy valami ilyen sort kell bemásolni a cron.php fájlomba?<br /><code>60 * * * * /usr/bin/wget -O - -q http://www.opera-bongeszo.com/cron.php</code></p>
+<p>A nofollowt biztosan lehet a theme layerben hozzáadni, de mivel fingom sincs, hogy az mi, ezért azt nem próbáltam, a feedapi_node.module-nak ennek a részébe próbáltam belekontárkodni, persze sikertelenül.</p>
+<p><code>if ($node-&gt;feedapi_node-&gt;url) {<br />
+        $links['feedapi_original'] = array(<br />
+          'title' =&gt; t('Original article'),<br />
+          'href' =&gt; $node-&gt;feedapi_node-&gt;url,<br />
+        );<br /></code><br />
+Addig is utána olvasok ennek a theme layernek, hogy mi fán terem</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="0" id="comment-211" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223758815"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 12., v - 00:00</p>
+    <p class="comment__permalink"><a href="../211/index.html#comment-211" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../210/index.html#comment-210" class="permalink" rel="bookmark" hreflang="hu">Köszönöm a segítséget,</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../211/index.html#comment-211" class="permalink" rel="bookmark" hreflang="hu">drupalcron</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Hagyd a poormanscron -t, itt ingyen teljesen korrekt cron-szolgáltatást kapsz:<br /><a href="http://www.drupalcron.org/">http://www.drupalcron.org/</a></p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="0" id="comment-212" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223761163"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 12., v - 00:39</p>
+    <p class="comment__permalink"><a href="../212/index.html#comment-212" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../211/index.html#comment-211" class="permalink" rel="bookmark" hreflang="hu">drupalcron</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../212/index.html#comment-212" class="permalink" rel="bookmark" hreflang="hu">Ez akkor most mi?</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Feltelepítem ezt az admintools modult és akkor minden órában meg lesz látogatva a cron.php fájlom és ezáltal minden fog frissülni?</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="0" id="comment-213" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223761780"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 12., v - 00:49</p>
+    <p class="comment__permalink"><a href="../213/index.html#comment-213" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../212/index.html#comment-212" class="permalink" rel="bookmark" hreflang="hu">Ez akkor most mi?</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../213/index.html#comment-213" class="permalink" rel="bookmark" hreflang="hu">http://drupal.hu/forum/cron-f</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p><a href="http://drupal.hu/forum/cron-futtatása-drupalcronorg-segítségével">http://drupal.hu/forum/cron-futtatása-drupalcronorg-segítségével</a></p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="0" id="comment-214" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1223766762"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2008. 10. 12., v - 02:12</p>
+    <p class="comment__permalink"><a href="../214/index.html#comment-214" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../213/index.html#comment-213" class="permalink" rel="bookmark" hreflang="hu">http://drupal.hu/forum/cron-f</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../214/index.html#comment-214" class="permalink" rel="bookmark" hreflang="hu">Köszi</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Jó kis cucc, akkor ugyabár a Poormanscron tulajdonképpen már nem is kell? Minnél kevesebb modul, annál jobb.</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="1" id="comment-215" class="comment js-comment by-node-author clearfix">
+    <span class="hidden" data-comment-timestamp="1223796846"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></p>
+    <p class="comment__time">2008. 10. 12., v - 10:34</p>
+    <p class="comment__permalink"><a href="../215/index.html#comment-215" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../214/index.html#comment-214" class="permalink" rel="bookmark" hreflang="hu">Köszi</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../215/index.html#comment-215" class="permalink" rel="bookmark" hreflang="hu">Ezt az oldalt nem ismertem,</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Ezt az oldalt nem ismertem, remek ötlet, ez esetben valóban nincs szükséged a poormanscron modulra egyáltalán.</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+</div></div></div></div></div></div></div><article role="article" data-comment-user-id="0" id="comment-224" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1233575038"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2009. 02. 02., h - 13:43</p>
+    <p class="comment__permalink"><a href="../224/index.html#comment-224" hreflang="hu">Permalink</a></p>
+          </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../224/index.html#comment-224" class="permalink" rel="bookmark" hreflang="hu">Nincsenek új elemek a feedben, vagy mégis? :)</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Szia,</p>
+<p>A FeedAPI-t használom egy RSS olvasó/kategorizáló oldal készítésénél.<br />
+Jelenleg remekül működik a dolog, azonban találtam egy feedet, ami nagyon fontos lenne számomra, de Frissítésre kattintva azt jelzi, hogy nincsenek benne új elemek, és emiatt üres is marad feed, és nodeok sem keletkeznek.<br />
+SimplePie-t használok (legfrissebb verzió), és a SimplePie Demo oldalon szépen be tudja olvasni a problémás rsst.<br />
+Erről volna szó: <a href="http://feeds.feedburner.com/OlympusImagingEurope-NewProducts?format=xml">http://feeds.feedburner.com/OlympusImagingEurope-NewProducts?format=xml</a><br />
+Pl. olyanok, hogy index vagy cnet probléma nélkül működnek az oldalon.</p>
+<p>Előre is nagyon köszi a segítséget,<br />
+Üdv,<br />
+Feri</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="1" id="comment-225" class="comment js-comment by-node-author clearfix">
+    <span class="hidden" data-comment-timestamp="1233581711"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></p>
+    <p class="comment__time">2009. 02. 02., h - 15:35</p>
+    <p class="comment__permalink"><a href="../225/index.html#comment-225" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../224/index.html#comment-224" class="permalink" rel="bookmark" hreflang="hu">Nincsenek új elemek a feedben, vagy mégis? :)</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../225/index.html#comment-225" class="permalink" rel="bookmark" hreflang="hu">ide</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Itt küldd be és ránézek:<br /><a href="http://drupal.org/project/issues/feedapi">http://drupal.org/project/issues/feedapi</a><br />
+Jobb egy helyen tartani a FeedAPI-val kapcsolatos gondokat.</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+</div><article role="article" data-comment-user-id="0" id="comment-239" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1247221177"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2009. 07. 10., p - 13:19</p>
+    <p class="comment__permalink"><a href="index.html#comment-239" hreflang="hu">Permalink</a></p>
+          </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="index.html#comment-239" class="permalink" rel="bookmark" hreflang="hu">karakterek száma az rss-postban</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Üdv, </p>
+<p>tudnál-e abban segíteni miként lehet korlátozni hogy hány karaktert vegyen át egy bejegyzésből? Több felhasználóm is kifogásolja, hogy a a teljes bejegyzést átveszi az oldalam (blog.hu-s blogok és nem tudják szabályozni mennyi menjen ki bejegyzésenként a csatornába, hanem a teljes bejegyzés belekerül). </p>
+<p>Nem a simplepie-t használom, hanem a parse common syndication-t.<br />
+Köszönöm,<br />
+Lehel</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="1" id="comment-240" class="comment js-comment by-node-author clearfix">
+    <span class="hidden" data-comment-timestamp="1247224898"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></p>
+    <p class="comment__time">2009. 07. 10., p - 14:21</p>
+    <p class="comment__permalink"><a href="../240/index.html#comment-240" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="index.html#comment-239" class="permalink" rel="bookmark" hreflang="hu">karakterek száma az rss-postban</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../240/index.html#comment-240" class="permalink" rel="bookmark" hreflang="hu">Ahha, egy megrendelőnek írtam</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Ahha, egy megrendelőnek írtam egy modult, ami pontosan ezt csinálja. Nem varázslat, a nodeapi-n keresztül csonkolom az elemeket valamint felhasználtam a drupal teaser-készítő kódját (copy-paste gányolás :), mivel drupal 5-höz kelett és a 6-osban jobb a teaser generálás).<br />
+Nem tudom, hogy fejlesztő vagy-e, ha igen, ez alapján 10 perc összerakni. Egyébként meg adj valami kontaktot. :)</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="0" id="comment-241" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1247227435"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2009. 07. 10., p - 15:03</p>
+    <p class="comment__permalink"><a href="../241/index.html#comment-241" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span> <a href="../240/index.html#comment-240" class="permalink" rel="bookmark" hreflang="hu">Ahha, egy megrendelőnek írtam</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../241/index.html#comment-241" class="permalink" rel="bookmark" hreflang="hu">kösz</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>hát fejlesztő nem vagyok, amit már régóta bánok :)<br />
+az elérhetőségem pedig: <a href="mailto:lazar.lehel@gmail.com">lazar.lehel@gmail.com</a></p>
+<p>Üdv,<br />
+Lehel</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+</div></div><article role="article" data-comment-user-id="0" id="comment-244" class="comment js-comment by-anonymous clearfix">
+    <span class="hidden" data-comment-timestamp="1251198544"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span></p>
+    <p class="comment__time">2009. 08. 25., k - 14:09</p>
+    <p class="comment__permalink"><a href="../244/index.html#comment-244" hreflang="hu">Permalink</a></p>
+          </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../244/index.html#comment-244" class="permalink" rel="bookmark" hreflang="hu">képek</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Üdv,<br />
+jól tudom, hogy a feedapi a képeket is belolvassa? Engedélyeztem az img tagot, de sajnos képek nem jönnek be:( Nem tudod kérlek, hogy lehet ezen segíteni? </p>
+<p>(Korábban próbáltam az imagegrabbert, de az túl hosszúra húzza a cront, és nem mindig a megfelelő képet rántja be).</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+
+<div class="indented"><article role="article" data-comment-user-id="1" id="comment-245" class="comment js-comment by-node-author clearfix">
+    <span class="hidden" data-comment-timestamp="1251273118"></span>
+
+  <footer class="comment__meta">
+    
+    <p class="comment__author"><span lang="" about="/user/1" typeof="schema:Person" property="schema:name" datatype="">Novák Áron</span></p>
+    <p class="comment__time">2009. 08. 26., sze - 10:51</p>
+    <p class="comment__permalink"><a href="../245/index.html#comment-245" hreflang="hu">Permalink</a></p>
+              <p class="visually-hidden">Válasz <span lang="" typeof="schema:Person" property="schema:name" datatype="">Névtelen (nem ellenőrzött)</span> <a href="../244/index.html#comment-244" class="permalink" rel="bookmark" hreflang="hu">képek</a> üzenetére</p>
+      </footer>
+
+  <div class="comment__content">
+          
+      <h3><a href="../245/index.html#comment-245" class="permalink" rel="bookmark" hreflang="hu">Két helyen kell állítani,</a></h3>
+      
+        
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Két helyen kell állítani, egyrészt az Allow all HTML tag (vagy kézzel megadni) a FeedAPI settings oldalán, másrészt az Input format is át kell engedje az adott taget.</p>
+</div>
+      <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>
+  </div>
+</article>
+</div>
+
+  
+</section>
+  <div class="node__links">
+    <ul class="links inline"><li class="comment-forbidden">A hozzászóláshoz <a href="../../user/register/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">regisztráció</a> és <a href="../../user/login/index-94.html?destination=/comment/reply/node/270/comment_node_story%23comment-form">bejelentkezés</a> szükséges</li></ul>  </div>
+
+  </div>
+</article>
+
+    </div>
+  </div>
+
+  </div>
+
+          </section>
+        </main>
+                  <div id="sidebar-first" class="column sidebar">
+            <aside class="section" role="complementary">
+                <div class="region region-sidebar-first">
+    <div id="block-twitter" class="block block-block-content block-block-contenta9b681fa-6604-48f1-b2d8-0b82d5efc2ac">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a class="twitter-timeline" href="https://twitter.com/NovakAron?ref_src=twsrc%5Etfw">Tweets by NovakAron</a> </p>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      
+    </div>
+  </div>
+
+  </div>
+
+            </aside>
+          </div>
+                      </div>
+    </div>
+        <footer class="site-footer">
+      <div class="layout-container">
+                          <div class="site-footer__bottom">
+              <div class="region region-footer-fifth">
+    <div id="block-bartik-powered" role="complementary" class="block block-system block-system-powered-by-block">
+  
+    
+      <div class="content">
+      <span><a href="https://www.drupal.org/">Drupal</a> alapú webhely</span>
+    </div>
+  </div>
+
+  </div>
+
+          </div>
+              </div>
+    </footer>
+  </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"comment\/241","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"hu","currentQuery":{"page":0}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"93f0b7ccb77388140ef5e0d336fda329cdcb50281f124f2540225f3e4920a699"}}</script>
+<script src="../../core/assets/vendor/jquery/jquery.min/index.js?v=3.4.1"></script>
+<script src="../../core/misc/drupalSettingsLoader/index.js?v=8.8.0"></script>
+<script src="../../sites/default/files/languages/hu_nKVh0NYzBD-Iw4BsT9VoVPu1snlBDG2K-cFReL7f7Gg/index.js?q21qh7"></script>
+<script src="../../core/misc/drupal/index.js?v=8.8.0"></script>
+<script src="../../core/misc/drupal.init/index.js?v=8.8.0"></script>
+<script src="../../core/modules/comment/js/comment-by-viewer/index.js?v=8.8.0"></script>
+
+  </body>
+</html>
